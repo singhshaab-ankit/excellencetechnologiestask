@@ -1,0 +1,17 @@
+1.-
+
+CREATE TABLE Users(
+username VARCHAR(30) PRIMARY KEY,
+password VARCHAR(30) NOT NULL
+)
+
+2.-
+CREATE TABLE Addresses(
+username VARCHAR(30),
+street VARCHAR(30),
+pincode INT(10),
+country INT(10),
+state VARCHAR(20),
+phone no VARCHAR(20)
+ FOREIGN KEY (username) REFERENCES Users(username)
+)
